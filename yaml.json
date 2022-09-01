@@ -1,0 +1,21 @@
+{
+	
+    "Print to console": {
+ 	"prefix": "service 1",
+	 	"body": [
+	 		"fyghsbadk",
+	 		"version: '1.0'",
+			"resources:",
+			"- servicetype: srm:servicetree",
+			"  serviceproperties:",
+			"   services:",
+			"    servicename: Service Resource Manager",
+			"    serviceGroup: O365 Enterprise Cloud",
+			"    teamGroup: M365 Gov and Spl Clouds Services",
+			"    teamGroupId: 32c6f42f-80cc-4f09-928f-124f6cce70f9",
+			"    shortName: SRMgr",
+			"    status: Active"
+	 	],
+	 	"description": "Log output to console"
+	 }
+}

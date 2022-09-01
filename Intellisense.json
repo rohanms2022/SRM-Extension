@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Schema for Service Resource Manager",
+    "description": "File for adding Intellisense in .yml files",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "serviceid": {
+            "oneOf": [
+                {"enum": ["fycudhvkdshv"], "description": "Service 4"},
+                {"enum": ["bjdvskvsr"], "description": "Service 2"},
+                {"enum": ["wndssdvhr"], "description": "Service 3"},
+                {"enum": ["fyghsbadk"],"description": "Service 1"}
+            ]
+            
+        },"version":{
+            "type":"string"
+        },"resources":{
+            "properties": {
+                "servicetype":{
+                    "oneOf": [
+                        {"enum": ["srm:servicetree"], "description": "Service 4"},
+                        {"enum": ["Type 2"], "description": "Service 2"}
+                        
+                    ]
+                
+                },"serviceproperties":{   
+                    "properties": {
+                        "services":{
+                            "properties": {
+                                "servicename":{
+                                    "oneOf": [
+                                        {"enum": ["Service Resource Manger"],"description": "Service 1"},
+                                        {"enum": ["Service 1"],"description": "Service 2"}]
+                                },
+                                "serviceGroup":{
+                                    
+                                    "oneOf": [{"enum": ["O365 Enterprise Cloud"]},{"enum": ["Group 2"]}]
+                                },
+                                "teamGroup":{
+                                    "type":"string",
+                                    "oneOf": [{"enum": ["M365 Gov and Spl Clouds Services"]},{"enum": ["Team Group 2"]}]
+                                },
+                                "teamGroupId":{
+                                    "type":"string",
+                                    "oneOf": [{"enum": ["32c6f42f-80cc-4f09-928f-124f6cce70f9"]},{"enum": ["jdjndfkds"]}]
+                                },
+                                "shortName":{
+                                    "type":"string",
+                                    "oneOf": [{"enum": ["SRMgr"]},{"enum": ["Name 2"]}]
+                                },
+                                "status":{
+                                    "type":"string",
+                                    "oneOf": [{"enum": ["Active"]},{"enum": ["Inactive"]}]
+                                }
+                            }
+                        }
+                    }      
+            
+                    }
+                    
+            }
+        }
+            
+        
+    }
+}
